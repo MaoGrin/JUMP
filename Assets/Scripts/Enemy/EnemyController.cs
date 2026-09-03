@@ -14,6 +14,11 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         view = GetComponent<EnemyView>();
+        if(model == null)
+        {
+            model = new EnemyModel();
+        }
+
         moveBehaviour?.Init(this);
         hurtBehaviour?.Init(this);
     }

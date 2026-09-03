@@ -1,11 +1,11 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 public abstract class EnemyBehaviourBase
 {
-    public EnemyView view;
-    public EnemyModel model;
-    public EnemyController controller;
-    public Transform transform;
+    protected EnemyView view;
+    protected EnemyModel model;
+    protected EnemyController controller;
+    protected Transform transform;
 
     public void Init(EnemyController con)
     {
