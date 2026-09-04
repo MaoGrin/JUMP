@@ -16,6 +16,8 @@ public class FlashHurtBehaviour : BaseEnemyHurt
     {
         view.SetSpriteRenderColor(Color.red);
         flashTimer = model.flashTime;
+        GameController.camShake.Shake();
+        VFXManager.Instance.PlayBleed(transform);
     }
 
     protected override void TickHurt()

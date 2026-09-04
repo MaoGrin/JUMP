@@ -6,8 +6,8 @@ public class EnemyView : MonoBehaviour
 {
     private BoxCollider2D box2d;
     private SpriteRenderer spRender;
-    // Start is called before the first frame update
-    void Start()
+    // Awake：只做「自己组件」的初始化（GetComponent 缓存引用）
+    void Awake()
     {
         box2d = GetComponent<BoxCollider2D>();
         spRender = GetComponent<SpriteRenderer>();
@@ -23,10 +23,9 @@ public class EnemyView : MonoBehaviour
     {
         spRender.color = color;
     }
-    
+
     public Color GetSpriteRenderColor()
     {
         return spRender.color;
     }
-
 }

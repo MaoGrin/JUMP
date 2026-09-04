@@ -10,5 +10,4 @@ public class EnemyModel
     public int damage = 1;
     public float flashTime = 1f;
     public float moveSpeed = 0f;
-
 }
